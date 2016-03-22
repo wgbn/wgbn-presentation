@@ -18,5 +18,8 @@ $(document).ready(function(){
                 $.conta--;
             $("#navega").attr('href', '#slide'+ $.conta).click();
         }
+
+        if (e.keyCode >= 37 && e.keyCode <= 40)
+            $("#subtitulo").html('&mdash; '+$('#slide'+ $.conta).attr('title'));
     });
 });
